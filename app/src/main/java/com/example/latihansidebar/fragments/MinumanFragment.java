@@ -30,11 +30,7 @@ public class MinumanFragment extends Fragment implements SelectListen {
         RecyclerView recyclerView = RootView.findViewById(R.id.recycl);
         List<itemsMe> Content = new ArrayList<>();
 
-        Content.add( new itemsMe("Dawet", "Gula arennya enak" ,R.drawable.baseline_fastfood_24));
-        Content.add( new itemsMe("Es Teler", "Kangen ama es teler 77" ,R.drawable.baseline_fastfood_24));
-        Content.add( new itemsMe("Degan", "Langganan buka puasa" ,R.drawable.baseline_fastfood_24));
-        Content.add( new itemsMe("Cincau", "Dawet deluxe edition" ,R.drawable.baseline_fastfood_24));
-        Content.add( new itemsMe("Es Teh", "Greatest of all time" ,R.drawable.baseline_fastfood_24));
+        Content.add( new itemsMe("Limun Oriental", "Terbuat dari racikan asam sitrat, air sari buah, dan karbondioksida, membuat minuman ini terkesan beruap. " ,"https://cdns.klimg.com/merdeka.com/i/w/news/2021/04/14/1296140/540x270/mengenal-limun-oriental-minuman-tempo-dulu-khas-pekalongan-cocok-untuk-buka-puasa.jpg"));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new adapter(getActivity(), Content, this));

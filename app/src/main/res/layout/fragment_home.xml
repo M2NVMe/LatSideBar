@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_gravity="center"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="23dp"
+        android:layout_marginTop="40dp"
+        android:text="Kota pekalongan"
+        />
+    <LinearLayout
+        android:background="@drawable/round1"
+        android:layout_marginTop="50dp"
+        android:id="@+id/mtch"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        android:layout_marginHorizontal="17dp"
+        android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/pekalongan"
+                android:layout_width="280dp"
+                android:layout_height="200dp"
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text=" Kota Pekalongan adalah salah satu kota di provinsi Jawa Tengah, Indonesia. Kota ini merupakan pelabuhan terpenting di Jawa Tengah dan terkenal dengan batiknya. Pekalongan merupakan kota pertama di Indonesia dan kota Asia Tenggara pertama yang menjadi bagian dari Jaringan Kota Kreatif UNESCO."
+                />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

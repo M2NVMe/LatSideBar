@@ -4,9 +4,9 @@ public class itemsMe {
 
     String nama;
     String desc;
-    int img;
+    String img;
 
-    public itemsMe(String nama, String desc, int img) {
+    public itemsMe(String nama, String desc, String img) {
         this.nama = nama;
         this.desc = desc;
         this.img = img;
@@ -28,11 +28,11 @@ public class itemsMe {
         this.desc = desc;
     }
 
-    public int getImg() {
+    public String getImg() {
         return img;
     }
 
-    public void setImg(int img) {
+    public void setImg(String img) {
         this.img = img;
     }
 }

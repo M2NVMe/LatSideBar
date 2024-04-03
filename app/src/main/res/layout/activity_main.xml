@@ -14,6 +14,9 @@
         >
         <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
+            app:title="PekaFood"
+            app:titleTextColor="@color/white"
+            android:background="#0E304A"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
             />

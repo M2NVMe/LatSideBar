@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 import com.example.latihansidebar.R;
 
 import java.util.List;
@@ -34,7 +36,7 @@ public class adapter extends RecyclerView.Adapter<viewHolder> {
     public void onBindViewHolder(@NonNull viewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.name.setText(items.get(position).getNama());
         holder.dec.setText(items.get(position).getDesc());
-        holder.imageView.setImageResource(items.get(position).getImg());
+        Glide.with(holder.itemView.getContext()).load(items.get(position).getImg()).into(holder.imageView);
 
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override

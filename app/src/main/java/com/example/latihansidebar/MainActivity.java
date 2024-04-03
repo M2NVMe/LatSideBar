@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.latihansidebar.fragments.HomeFragment;
 import com.example.latihansidebar.fragments.MakananFragment;
 import com.example.latihansidebar.fragments.MinumanFragment;
 import com.google.android.material.navigation.NavigationView;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar utama = findViewById(R.id.toolbar);
         setSupportActionBar(utama);
 
-        replaceFragment(new MakananFragment());
+        replaceFragment(new HomeFragment());
         drawerLayout = findViewById(R.id.main);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, utama, R.string.open_drawer, R.string.close_drawer);
         drawerLayout.addDrawerListener(toggle);
@@ -50,7 +51,10 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new MakananFragment());
                 } else if (id == R.id.minuman) {
                     replaceFragment(new MinumanFragment());
-                } else {
+                } else if (id == R.id.home) {
+                    replaceFragment(new HomeFragment());
+                }
+                else {
                     Toast.makeText(MainActivity.this, "INVALID", Toast.LENGTH_SHORT).show();
                 }
                 drawerLayout.closeDrawers();
