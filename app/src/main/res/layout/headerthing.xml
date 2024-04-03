@@ -2,19 +2,17 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
+    android:layout_height="240dp"
     android:background="#0E304A">
 
-    <!-- Your profile picture or icon -->
     <ImageView
         android:id="@+id/imageViewProfile"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:src="@drawable/ball"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:src="@drawable/head"
+        android:layout_centerInParent="true" />
 
-    <!-- User name or other information -->
+
     <TextView
         android:id="@+id/textViewUsername"
         android:layout_width="wrap_content"
@@ -23,6 +21,16 @@
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:layout_below="@id/imageViewProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/desca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PekaFood adalah aplikasi tentang informasi makanan khas kota Pekalongan"
+        android:textColor="@android:color/white"
+        android:textSize="8sp"
+        android:layout_below="@id/textViewUsername"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"/>
 </RelativeLayout>

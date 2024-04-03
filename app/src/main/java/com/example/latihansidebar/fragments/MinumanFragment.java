@@ -31,6 +31,7 @@ public class MinumanFragment extends Fragment implements SelectListen {
         List<itemsMe> Content = new ArrayList<>();
 
         Content.add( new itemsMe("Limun Oriental", "Terbuat dari racikan asam sitrat, air sari buah, dan karbondioksida, membuat minuman ini terkesan beruap. " ,"https://cdns.klimg.com/merdeka.com/i/w/news/2021/04/14/1296140/540x270/mengenal-limun-oriental-minuman-tempo-dulu-khas-pekalongan-cocok-untuk-buka-puasa.jpg"));
+        Content.add( new itemsMe("Kopi tahlil", "minuman ini awalnya adalah suguhan pada acara tahlilan masyarakat. Kopi tahlil dibuat dengan kopi yang dicampur dengan rempah-rempah, seperti kapulaga, jahe, cengkih, kayu manis, pandan, batang serai dan pala. Kedai-kedai kopi tahlil dapat dijumpai di berbagai sudut kota Pekalongan, terutama pada malam hari. " ,"https://www.femina.co.id/images/images_article/004_001_1531_pic.jpg"));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new adapter(getActivity(), Content, this));

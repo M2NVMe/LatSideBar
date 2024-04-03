@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,29 +13,38 @@
     <TextView
         android:textColor="@color/black"
         android:id="@+id/heading"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="23dp"
-        android:layout_marginTop="40dp"
-        android:text="Kota pekalongan"
+        android:text="Tentang kota Pekalongan"
         />
-    <LinearLayout
-        android:background="@drawable/round1"
-        android:layout_marginTop="50dp"
-        android:id="@+id/mtch"
-        android:orientation="vertical"
-        android:textAlignment="center"
-        android:gravity="center"
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
         android:padding="5dp"
-        android:layout_width="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/heading"
-        android:layout_marginHorizontal="17dp"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/round1"
+            android:id="@+id/mtch"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heading"
+
+            android:layout_height="wrap_content">
             <ImageView
                 android:src="@drawable/pekalongan"
                 android:layout_width="280dp"
@@ -49,6 +59,17 @@
                 android:letterSpacing="0.05"
                 android:text=" Kota Pekalongan adalah salah satu kota di provinsi Jawa Tengah, Indonesia. Kota ini merupakan pelabuhan terpenting di Jawa Tengah dan terkenal dengan batiknya. Pekalongan merupakan kota pertama di Indonesia dan kota Asia Tenggara pertama yang menjadi bagian dari Jaringan Kota Kreatif UNESCO."
                 />
-    </LinearLayout>
+            <TextView
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text=" Pekalongan berbatasan dengan Laut Jawa di utara, Kabupaten Batang di timur, serta Kabupaten Pekalongan di sebelah selatan dan barat, dan terletak di lintas utara. Pekalongan berjarak 417 km sebelah barat dari Kota Surabaya, atau 384 km sebelah timur dari Jakarta. Pekalongan dikenal dengan julukan Kota Batik, karena batik Pekalongan memiliki corak yang khas dan variatif."
+                />
+        </LinearLayout>
+    </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
